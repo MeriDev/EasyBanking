@@ -1,0 +1,40 @@
+.showcase {
+  background-color: $veryLightGray;
+
+  &__img {
+    height: 17.5rem;
+    width: 100%;
+    background: url(/images/bg-intro-mobile.svg) center/cover no-repeat;
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-image: url(/images/image-mockups.png);
+      background-size: 93%;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__content {
+    padding: 4.375rem 1.5rem;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 2.31rem;
+    font-weight: 300;
+    color: $darkBlue;
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+  }
+
+  &__text {
+    font-size: $font-sm;
+    line-height: 1.5;
+    margin-bottom: 2.25rem;
+  }
+}

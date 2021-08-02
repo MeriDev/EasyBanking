@@ -33,6 +33,7 @@
   </head>
   <body>
     <header class="header">
+      <div class="overlay hidden"></div>
       <nav class="flex flex-jc-sb flex-ai-c">
         <a href="index.html">
           <img
@@ -42,30 +43,80 @@
           />
         </a>
 
-        <ul class="header__links flex">
-          <li><a href="index.html" class="header__link">Home</a></li>
-          <li><a href="#!" class="header__link">About</a></li>
-          <li><a href="#!" class="header__link">Contact</a></li>
-          <li><a href="#!" class="header__link">Blog</a></li>
-          <li><a href="#!" class="header__link">Careers</a></li>
+        <ul class="header__links flex hide-for-mobile">
+          <li class="header__item">
+            <a href="index.html" class="header__link">Home</a>
+          </li>
+          <li class="header__item">
+            <a href="#!" class="header__link">About</a>
+          </li>
+          <li class="header__item">
+            <a href="#!" class="header__link">Contact</a>
+          </li>
+          <li class="header__item">
+            <a href="#!" class="header__link">Blog</a>
+          </li>
+          <li class="header__item">
+            <a href="#!" class="header__link">Careers</a>
+          </li>
         </ul>
 
-        <a href="#" class="header__cta">Request Invite</a>
+        <a href="#" class="cta-btn hide-for-mobile">Request Invite</a>
 
-        <a href="#" class="header__menu">
+        <a href="#" class="header__toggle hide-for-desktop" id="btn-humburger">
           <span></span>
           <span></span>
           <span></span
         ></a>
       </nav>
+
+      <ul class="header__menu hidden">
+        <li class="header__menu__item">
+          <a href="index.html" class="header__menu__link">Home</a>
+        </li>
+        <li class="header__menu__item">
+          <a href="#!" class="header__menu__link">About</a>
+        </li>
+        <li class="header__menu__item">
+          <a href="#!" class="header__menu__link">Contact</a>
+        </li>
+        <li class="header__menu__item">
+          <a href="#!" class="header__menu__link">Blog</a>
+        </li>
+        <li class="header__menu__item">
+          <a href="#!" class="header__menu__link">Careers</a>
+        </li>
+      </ul>
     </header>
 
-    <div class="attribution">
+    <!-- ----------------------------------------------- -->
+    <main class="main">
+      <div class="container">
+        <section class="showcase">
+          <div class="showcase__img"></div>
+
+          <div class="showcase__content">
+            <h1 class="showcase__title">Next generation digital banking</h1>
+            <p class="showcase__text">
+              Take your financial life online. Your Easybank account will be a
+              one-stop-shop for spending, saving, budgeting, investing, and much
+              more.
+            </p>
+            <a href="#" class="cta-btn">Request invite</a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- --------------------------------------------------- -->
+
+    <!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Meri Dev</a>.
-    </div>
+      >. Coded by
+      <a href="https://github.com/MeriDev" target="_blank">Meri Dev</a>.
+    </div> -->
 
     <script src="/app/JS/app.js"></script>
   </body>
