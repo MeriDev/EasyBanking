@@ -2,6 +2,22 @@
   position: relative;
   z-index: 10;
 
+  &.open {
+    .header__toggle {
+      > :nth-child(2) {
+        opacity: 0;
+      }
+
+      > :nth-child(1) {
+        transform: rotate(45deg);
+      }
+
+      > :nth-child(3) {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
   nav {
     background-color: $white;
     position: relative;
@@ -25,20 +41,6 @@
 
       &:not(:last-child) {
         margin-bottom: 5px;
-      }
-    }
-
-    &.open {
-      > :nth-child(2) {
-        opacity: 0;
-      }
-
-      > :nth-child(1) {
-        transform: rotate(45deg);
-      }
-
-      > :nth-child(3) {
-        transform: rotate(-45deg);
       }
     }
   }
